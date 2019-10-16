@@ -1,0 +1,76 @@
+.module-9 .tile {
+  font: normal 20px/28px "Cinzel";
+  text-align: center;
+  margin: 0;
+  padding: 50px 5px;
+}
+
+.module-9 .row-1 {
+  padding: 15px 0;
+}
+
+.module-9 .row-1 .col-md-4 img {
+  position: relative;
+  width: 340px;
+}
+
+.module-9 .row-1 .col-md-4 img:hover {
+  opacity: 0.3;
+}
+
+.module-9 .row-1 .col-md-4 img::before {
+  position: absolute;
+  content: '';
+  background: #ed5f60;
+  padding: 100px;
+}
+
+.module-9 .row-2 {
+  padding: 15px 0;
+}
+
+.module-9 .row-2 .col-md-4 img {
+  width: 340px;
+}
+
+.module-9 .row-2 .col-md-4 img:hover {
+  opacity: 0.3;
+  background: #ed5f60;
+}
+
+.module-9 .center {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.module-9 .center .text-button {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 30px;
+  background: #f07677;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.module-9 .center .text-button:hover {
+  background: #ed5f60;
+}
+
+@media screen and (max-width: 480px) {
+  .module-9 .tile {
+    font-size: 10px;
+  }
+  .module-9 .row-1 .col-md-4 img {
+    padding: 10px 0;
+    width: 240px;
+  }
+  .module-9 .row-2 .col-md-4 img {
+    padding: 10px 0;
+    width: 240px;
+  }
+  .module-9 .center {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=9.css.map */

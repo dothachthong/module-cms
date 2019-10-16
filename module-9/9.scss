@@ -1,0 +1,100 @@
+$padding-tile : 50px 5px;
+$padding-row : 15px 0;
+$padding-row-mobile : 10px 0;
+$width-img : 340px;
+$width-img-mobile : 240px;
+$padding-center : 50px 0;
+$padding-center-textbutton : 10px 30px;
+$backround : #f07677;
+$backround-hover : #ed5f60;
+$color-btn : #fff;
+
+.module-9 {
+    .tile {
+        font: normal 20px/28px "Cinzel";
+        text-align: center;
+        margin: 0;
+        padding: $padding-tile;
+        
+    }
+
+    .row-1 {
+        padding: $padding-row;
+        .col-md-4 {
+            
+            img{
+                position: relative;
+                width: $width-img;
+                &:hover{
+                    opacity: 0.3 ;
+                    
+                }
+            }
+            img::before{
+                position: absolute;
+                content: '';
+                background: #ed5f60;
+                padding: 100px;
+            }
+            
+        }
+    }
+
+    .row-2 {
+        padding: $padding-row;
+        .col-md-4 {
+            img{
+                width: $width-img;
+                &:hover{
+                    opacity: 0.3 ;
+                    background: #ed5f60;
+                }
+            }
+        }
+    }
+
+    .center {
+        text-align: center;
+        padding: $padding-center;
+            .text-button {
+            text-decoration: none;
+            text-align: center;
+            padding: $padding-center-textbutton;
+            background: $backround;
+            color: $color-btn;
+            border-radius: 20px;
+            font-size: 20px;
+                &:hover{
+                    background: $backround-hover;
+                }
+            }
+    }
+    @media screen and(max-width:480px)  {
+        .tile {
+            font-size: 10px
+        }
+
+        .row-1 {
+            .col-md-4 {
+                img{
+                    padding: $padding-row-mobile;    
+                    width: $width-img-mobile;
+                }
+            }
+        }
+
+        .row-2 {
+            .col-md-4 {
+                img{
+                    padding: $padding-row-mobile; 
+                    width: $width-img-mobile;
+                }
+            }
+        }
+
+        .center {
+            text-align: center;
+        }         
+    }
+}
+
